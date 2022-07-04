@@ -1,0 +1,28 @@
+{
+	"name": "Retail_rta",
+	"properties": {
+		"Name": "Retail_rta",
+		"EntityType": "DATABASE",
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Retail\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true,
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate"
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://demo@adlsdev007.dfs.core.windows.net/Retail_rta",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "synapsedev007-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "5a67487e-24dc-4d41-81a1-bf37af5c2855"
+	},
+	"type": "DATABASE"
+}
